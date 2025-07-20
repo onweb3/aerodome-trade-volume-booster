@@ -1,12 +1,12 @@
-const ethers = require('ethers');
+import { JsonRpcProvider, Wallet, Contract, parseEther } from 'ethers';
 
 async function executeBatchTrade() {
 
-    const provider = new ethers.JsonRpcProvider('https://mainnet.base.org');
+    const provider = new JsonRpcProvider('https://mainnet.base.org');
 
 
     const privateKey = 'YOUR_PRIVATE_KEY'; // create a new wallet and use it for volume boost
-    const wallet = new ethers.Wallet(privateKey, provider);
+    const wallet = new Wallet(privateKey, provider);
 
 
     const contractABI = [{
@@ -36,7 +36,7 @@ async function executeBatchTrade() {
     const contractAddress = '0x027Ed9B84b95069C6f10eD1BE5dA0B4414804547';
 
 
-    const contract = new ethers.Contract(contractAddress, contractABI, wallet);
+    const contract = new Contract(contractAddress, contractABI, wallet);
 
     //trade parameters
     const token = '0x2f74f818e81685c8086Dd783837a4605a90474B8'; // nation token address
@@ -50,7 +50,7 @@ async function executeBatchTrade() {
             token,
             iterations,
             minAmountOut,
-            { value: ethers.parseEther('0.01') }  //dont use dust eth amount as it wont get logged on dex screener 
+            { value: parseEther('0.01') }  //dont use dust eth amount as it wont get logged on dex screener 
 
         );
 
