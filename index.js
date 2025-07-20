@@ -3,9 +3,9 @@ import { JsonRpcProvider, Wallet, Contract, parseEther } from 'ethers';
 async function executeBatchTrade() {
 
     const provider = new JsonRpcProvider('https://mainnet.base.org');
+    const token = '0x2f74f818e81685c8086Dd783837a4605a90474B8'; 
 
-
-    const privateKey = 'YOUR_PRIVATE_KEY'; // create a new wallet and use it for volume boost
+    const privateKey = 'YOUR_PRIVATE_KEY'; 
     const wallet = new Wallet(privateKey, provider);
 
 
@@ -39,7 +39,7 @@ async function executeBatchTrade() {
     const contract = new Contract(contractAddress, contractABI, wallet);
 
     //trade parameters
-    const token = '0x2f74f818e81685c8086Dd783837a4605a90474B8'; // nation token address
+    
     const iterations = 50; // no. of trades per inside a single transaction
     const minAmountOut = 0; // put zero
 
