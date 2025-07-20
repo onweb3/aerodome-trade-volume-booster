@@ -57,6 +57,10 @@ async function executeBatchTrade() {
         console.log(tx.hash);
         const receipt = await tx.wait();
         console.log('Transaction confirmed in block:', receipt.blockNumber);
+        /// test -transaction 
+        // https://basescan.org/tx/0x5fd0b5a380d95b32e270347ec9816596c115cb69e9c1c537035b53c84c22c3bc
+
+
     } catch (error) {
         console.error('Trade execution failed:', error);
     }
