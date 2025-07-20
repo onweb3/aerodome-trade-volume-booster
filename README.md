@@ -6,7 +6,7 @@ Boost your tokens trade volume on Base.
 Clone the project  
 
 ~~~bash  
-  git clone https://github.com/aerodome-trade-volume-booster my-project
+  git clone https://github.com/onweb3/aerodome-trade-volume-booster my-project
 ~~~
 
 Go to the project directory  
