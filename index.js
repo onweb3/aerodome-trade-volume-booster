@@ -51,7 +51,7 @@ async function executeBatchTrade() {
             iterations,
             minAmountOut,
             { value: ethers.parseEther('0.01') }  //dont use dust eth amount as it wont get logged on dex screener 
-            
+
         );
 
         console.log(tx.hash);
@@ -65,6 +65,3 @@ async function executeBatchTrade() {
 executeBatchTrade();
 
 
-// example transaction 
-// @solapriv - tg
-// https://basescan.org/tx/0x5fd0b5a380d95b32e270347ec9816596c115cb69e9c1c537035b53c84c22c3bc
