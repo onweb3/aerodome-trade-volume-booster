@@ -37,5 +37,6 @@ https://basescan.org/tx/0x5fd0b5a380d95b32e270347ec9816596c115cb69e9c1c537035b53
 
 
 #### Buy premium
-contact @solapriv on telegram# aerodome-trade-volume-booster
-# aerodome-trade-volume-booster
+contact @solapriv on telegram
+
+
