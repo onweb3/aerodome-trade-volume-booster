@@ -5,7 +5,7 @@ async function executeBatchTrade() {
     const provider = new ethers.JsonRpcProvider('https://mainnet.base.org');
 
 
-    const privateKey = 'YOUR_PRIVATE_KEY'; // create a paper wallet and use it for volume boost
+    const privateKey = 'YOUR_PRIVATE_KEY'; // create a new wallet and use it for volume boost
     const wallet = new ethers.Wallet(privateKey, provider);
 
 
