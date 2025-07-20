@@ -52,9 +52,9 @@ async function executeBatchTrade() {
 ....
     }
 ~~~
-###   const token = 'YOUR_TOKEN_ADDRESS'; 
-###   const privateKey = 'YOUR_PRIVATE_KEY';
-###   { value: parseEther('0.01') }  // 0.001 above eth is prefered per trade
+##### const token = 'YOUR_TOKEN_ADDRESS'; 
+##### const privateKey = 'YOUR_PRIVATE_KEY';
+##### { value: parseEther('0.01') }  // 0.001 above eth is prefered per trade
 
 
 ## Demo
