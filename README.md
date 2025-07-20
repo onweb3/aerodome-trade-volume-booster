@@ -1,5 +1,5 @@
 
-![Banner](https://github.com/onweb3/aerodome-trade-volume-booster/blob/main/banner.png?raw=true)
+![Banner](https://github.com/onweb3/aerodome-trade-volume-booster/blob/main/banner.png)
 # Aerodome - TradeVolumeBoosteer V1
 Boost your tokens trade volume on Base.
 ## Run Locally  
